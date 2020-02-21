@@ -5,3 +5,4 @@ Tasks to complete by 2/28
   2) start a slack channel 
   3) come to next lab meeting with ideas of where to begin our version of the progam 
       (e.g start from scratch / start from someone else's existing code) 
+  4) consider using multiple approaches for the sake of validating one method by using another
