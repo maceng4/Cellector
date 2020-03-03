@@ -6,11 +6,14 @@ import cv2
 import numpy as np
 import argparse
 
-def run(img, write_img, type):
-	pass
-def image_preprocessing(img):
-	pass
+def run(img_file, write_img, type):
+	preprocessed_img = image_preprocessing(img)
+def image_preprocessing(img_file, type):
+	img = cv2.imread(img_file,mode = type)
+	return img
 def blob_detection(preprocessed_img):
+	pass
+def write_to_file(write_img):
 	pass
 def main():
     global args
