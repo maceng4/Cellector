@@ -2,14 +2,18 @@ from matplotlib import pyplot as plt
 from matplotlib import image as image
 from matplotlib import collections as mc
 from PIL import Image,ImageOps,ImageEnhance
+import mahotas as mh
 import cv2
 import numpy as np
 import argparse
 
 def run(img_file, write_img, type):
-	preprocessed_img = image_preprocessing(img)
+	preprocessed_img = image_preprocessing(img_file,type)
 def image_preprocessing(img_file, type):
-	img = cv2.imread(img_file,mode = type)
+	img = Image.open(img_file)
+	plt.imshow(img)
+	plt.show()
+	print(img.shape)
 	return img
 def blob_detection(preprocessed_img):
 	pass
@@ -26,7 +30,7 @@ def main():
                     type=str, default=None)
     parser.add_argument("-t", "--type",
                     help="type of image file",
-                    type=str, default="RGBI")
+                    type=str, default="RGBA")
     args = parser.parse_args()
     run(args.file,args.write_file,args.type)
 
