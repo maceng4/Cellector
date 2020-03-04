@@ -4,7 +4,7 @@ Tasks to complete by 3/7
   1) create skeleton code
   2) attempt an OpenCV (cv2) framework
 
-
+----------
 
 Tasks to complete by 2/28
   1) select 2 current cell counting programs and run the above test images through them to judge their efficacy 
