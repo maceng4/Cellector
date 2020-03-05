@@ -5,6 +5,7 @@ from PIL import Image,ImageOps,ImageEnhance
 import mahotas as mh
 import cv2
 import numpy as np
+import scipy.misc
 import argparse
 
 def run(img_file, write_img, type): 
@@ -31,8 +32,8 @@ def image_preprocessing(img_file, type): #filtering, blurring: preprocessing for
 	return img
 def blob_detection(preprocessed_img): #TBD
 	pass
-def write_to_file(write_img):#TBD
-	pass
+def write_to_file(write_img, write_file):#write_img is a numpy array, write_file is a filename
+	Image.fromarray(write_img).save(write_file)
 def main():
     global args
     parser = argparse.ArgumentParser(description='...')
