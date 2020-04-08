@@ -1,4 +1,14 @@
 # Cell_Counting
+Tasks to complete by 4/15/20:
+- get opencv/cv2 working 
+- make sure the simple blob detection function of opencv works
+- ensure we can edit parameters of simple blob detection
+- test simple blob detection using thalamus test image AND preprocessing steps 
+
+
+
+
+-----------
 
 Tasks to complete by 3/7
   1) create skeleton code
