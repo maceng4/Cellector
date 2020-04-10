@@ -5,7 +5,7 @@ Tasks to complete by 4/15/20:
 - ensure we can edit parameters of simple blob detection
 - test simple blob detection using thalamus test image AND preprocessing steps 
 
-
+next step: lets generate a training set. This program will have the use click on a cell and save the cell as a PNG (cell plus XbyX bounding box).
 
 
 -----------
